@@ -45,7 +45,7 @@ export default function Register() {
           <div className="w-14 h-14 bg-indigo-500/10 rounded-2xl flex items-center justify-center border border-indigo-500/20 mb-3 animate-pulse">
             <Flame className="w-8 h-8 text-indigo-500 fill-indigo-500/20" />
           </div>
-          <h2 className="font-display font-extrabold text-3xl tracking-tight text-white">Join Pulse</h2>
+          <h2 className="font-display font-extrabold text-3xl tracking-tight text-white">Join SocialMAP</h2>
           <p className="text-sm text-slate-500 mt-1">Create an account to start sharing</p>
         </div>
 

@@ -61,7 +61,7 @@ export default function Navbar({ onMenuClick }) {
         </button>
         <Link to="/" className="flex items-center gap-2 font-display font-extrabold text-2xl tracking-tight bg-gradient-to-r from-indigo-400 via-purple-500 to-rose-400 bg-clip-text text-transparent">
           <Flame className="w-7 h-7 text-indigo-500 fill-indigo-500/20" />
-          Pulse
+          SocialMAP
         </Link>
       </div>
 
