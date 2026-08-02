@@ -132,3 +132,4 @@ export default function PostCard({ post, onPostDeleted }) {
     </div>
   );
 }
+
