@@ -24,7 +24,7 @@ export const WebSocketProvider = ({ children }) => {
     }
 
     // Initialize STOMP client with SockJS
-    const socket = new SockJS('/ws');
+    const socket = new SockJS((import.meta.env.VITE_API_BASE_URL || '') + '/ws');
     const client = new Client({
       webSocketFactory: () => socket,
       debug: (str) => {

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '', // Routed via Vite proxy
+  baseURL: import.meta.env.VITE_API_BASE_URL || '', // Routed via Vite proxy in dev, custom backend URL in prod
 });
 
 // Request Interceptor: inject Bearer Token
@@ -65,7 +65,8 @@ api.interceptors.response.use(
       }
 
       try {
-        const { data } = await axios.post('/api/auth/refresh', { refreshToken });
+        const baseURL = import.meta.env.VITE_API_BASE_URL || '';
+        const { data } = await axios.post(`${baseURL}/api/auth/refresh`, { refreshToken });
         localStorage.setItem('accessToken', data.accessToken);
         localStorage.setItem('refreshToken', data.refreshToken);
         
